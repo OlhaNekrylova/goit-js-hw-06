@@ -1,8 +1,8 @@
 const categoriesEl = document.querySelectorAll('.item');
-console.log(categoriesEl);
-const calculateCategories = (items) => {
-    let total = 0;
-    categoriesEl.forEach((item) => (total += 1));
-    return categoriesEl.length;
-}
+// console.log(categoriesEl);
 console.log('Number of categories:', categoriesEl.length);
+
+const object = categoriesEl.forEach((element) => {
+    console.log('Category:', element.querySelector('h2').textContent);
+    console.log('Elements:', element.querySelectorAll('li').length);
+})
