@@ -1,4 +1,4 @@
-const categoriesEl = document.querySelectorAll('li.item');
+const categoriesEl = document.querySelectorAll('.item');
 console.log(categoriesEl);
 const calculateCategories = (items) => {
     let total = 0;
