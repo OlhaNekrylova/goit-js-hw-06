@@ -26,3 +26,5 @@ const makeGalleryMarkup = images
 
 galleryEl.insertAdjacentHTML('afterbegin', makeGalleryMarkup);
 console.log(galleryEl);
+
+
