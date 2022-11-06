@@ -19,25 +19,10 @@ const makeGalleryMarkup = images
 .map(images => {
   const {url, alt} = images;
   return `
-  <li><img src="${images.url}" alt="${images.alt}"></img></li>
+  <li class="item"><img class="card" src="${url}" alt="${alt}"></img></li>
   `;
 })
 .join('');
 
 galleryEl.insertAdjacentHTML('afterbegin', makeGalleryMarkup);
 console.log(galleryEl);
-
-
-// const itemEl = document.querySelector('.gallery > li');
-// galleryEl.style.display = flex;
-// // galleryEl.style.gap = ${30}px;
-// itemEl.style.display = block;
-// // itemEl.style.max-width = ${100%};
-// itemEl.style.height = auto;
-
-// function addClass () {
-//   [...itemEl].forEach((itemEl) => {
-//     itemEl.classList.add('card');
-// })}
-// galleryEl.classList.add('card-list');
-// itemEl.classList.add('card');
