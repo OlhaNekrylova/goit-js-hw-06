@@ -28,10 +28,12 @@ button {
   gap: 30px;
   height: 300px;
   padding-left: 0;
+  list-style: none;
 }
 
 .item {
-
+border-radius: 10px;
+overflow: hidden;
 }
 
 .card {
