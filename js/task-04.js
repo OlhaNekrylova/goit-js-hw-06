@@ -16,14 +16,14 @@ const counterValue = {
 
 descrementBtnEl.addEventListener('click', onDescrementBtnElClick);
 
-function onDescrementBtnElClick (event) {
+function onDescrementBtnElClick () {
     valueEl.textContent = counterValue.value;
     counterValue.descrement();
 }
 
 incrementBtnEl.addEventListener('click', onIncrementBtnElClick);
 
-function onIncrementBtnElClick (event) {
+function onIncrementBtnElClick () {
     valueEl.textContent = counterValue.value;
     counterValue.increment();
 }
